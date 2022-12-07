@@ -1,0 +1,28 @@
+[07-Jun-2022 17:48:51 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Error as array in /home/crestagro/public_html/Media/wp-content/plugins/ninja-forms/ninja-forms.php:1137
+Stack trace:
+#0 /home/crestagro/public_html/Media/wp-includes/class-wp-hook.php(287): nf_update_marketing_feed()
+#1 /home/crestagro/public_html/Media/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/crestagro/public_html/Media/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /home/crestagro/public_html/Media/wp-cron.php(138): do_action_ref_array('nf_marketing_fe...', Array)
+#4 {main}
+  thrown in /home/crestagro/public_html/Media/wp-content/plugins/ninja-forms/ninja-forms.php on line 1137
+[27-Oct-2022 19:20:40 UTC] PHP Fatal error:  Cannot use "parent" when current class scope has no parent in /home/crestagro/public_html/Media/wp-content/plugins/ninja-forms/includes/Abstracts/Field.php on line 210
+[27-Oct-2022 19:20:40 UTC] PHP Stack trace:
+[27-Oct-2022 19:20:40 UTC] PHP   1. {main}() /home/crestagro/public_html/Media/index.php:0
+[27-Oct-2022 19:20:40 UTC] PHP   2. require() /home/crestagro/public_html/Media/index.php:17
+[27-Oct-2022 19:20:40 UTC] PHP   3. require_once() /home/crestagro/public_html/Media/wp-blog-header.php:13
+[27-Oct-2022 19:20:40 UTC] PHP   4. require_once() /home/crestagro/public_html/Media/wp-load.php:37
+[27-Oct-2022 19:20:40 UTC] PHP   5. require_once() /home/crestagro/public_html/Media/wp-config.php:102
+[27-Oct-2022 19:20:40 UTC] PHP   6. do_action($tag = 'plugins_loaded') /home/crestagro/public_html/Media/wp-settings.php:403
+[27-Oct-2022 19:20:40 UTC] PHP   7. WP_Hook->do_action($args = [0 => '']) /home/crestagro/public_html/Media/wp-includes/plugin.php:478
+[27-Oct-2022 19:20:40 UTC] PHP   8. WP_Hook->apply_filters($value = '', $args = [0 => '']) /home/crestagro/public_html/Media/wp-includes/class-wp-hook.php:311
+[27-Oct-2022 19:20:40 UTC] PHP   9. Ninja_Forms->plugins_loaded('') /home/crestagro/public_html/Media/wp-includes/class-wp-hook.php:287
+[27-Oct-2022 19:20:40 UTC] PHP  10. Ninja_Forms::load_classes($prefix = 'Fields') /home/crestagro/public_html/Media/wp-content/plugins/ninja-forms/ninja-forms.php:618
+[27-Oct-2022 19:20:40 UTC] PHP  11. class_exists($class = 'NF_Fields_Address') /home/crestagro/public_html/Media/wp-content/plugins/ninja-forms/ninja-forms.php:850
+[27-Oct-2022 19:20:40 UTC] PHP  12. Ninja_Forms->autoloader($class_name = 'NF_Fields_Address') /home/crestagro/public_html/Media/wp-content/plugins/ninja-forms/ninja-forms.php:850
+[27-Oct-2022 19:20:40 UTC] PHP  13. require_once() /home/crestagro/public_html/Media/wp-content/plugins/ninja-forms/ninja-forms.php:663
+[27-Oct-2022 19:20:40 UTC] PHP  14. Ninja_Forms->autoloader($class_name = 'NF_Fields_Textbox') /home/crestagro/public_html/Media/wp-content/plugins/ninja-forms/includes/Fields/Address.php:6
+[27-Oct-2022 19:20:40 UTC] PHP  15. require_once() /home/crestagro/public_html/Media/wp-content/plugins/ninja-forms/ninja-forms.php:663
+[27-Oct-2022 19:20:40 UTC] PHP  16. Ninja_Forms->autoloader($class_name = 'NF_Abstracts_Input') /home/crestagro/public_html/Media/wp-content/plugins/ninja-forms/includes/Fields/Textbox.php:6
+[27-Oct-2022 19:20:40 UTC] PHP  17. require_once() /home/crestagro/public_html/Media/wp-content/plugins/ninja-forms/ninja-forms.php:663
+[27-Oct-2022 19:20:40 UTC] PHP  18. Ninja_Forms->autoloader($class_name = 'NF_Abstracts_Field') /home/crestagro/public_html/Media/wp-content/plugins/ninja-forms/includes/Abstracts/Input.php:6

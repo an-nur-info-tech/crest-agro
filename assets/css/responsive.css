@@ -1,0 +1,128 @@
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .navbar-toggler {
+        border: none;
+        box-shadow: none;
+    }
+    .navbar-collapse {
+        text-align: center;
+        background: #7aa354;
+    }
+
+    .navbar-collapse ul li a {
+        color: #fff !important;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0;
+    }
+    li.active a {
+        color: #7aa354;
+        text-transform: uppercase;
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .navbar-toggler {
+        border: none;
+        box-shadow: none;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        border: none;
+    }
+    .navbar-collapse {
+        text-align: center;
+        background: #fff;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .active {
+        
+        text-transform: uppercase;
+        border-bottom: none;
+    }
+
+    li.nav-item a.active {
+        color: #7aa354 !important;
+        font-weight: 600;
+    }
+
+    .nav-item .nav-link {
+        color: rgba(0,0,0,.5) !important;
+    }
+
+    .slider {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 300px;
+    }
+    
+    .slider img {
+        height: 300px;
+    }
+
+    .slider .caption {
+        position: absolute;
+        bottom: -60px;
+        left: 50%;
+        color: white;
+        z-index: 2000;
+        background: #7aa354c7;
+        padding: 20px;
+        transform: translate(-50%, -50%)
+    }
+
+    .hero {
+        height: 100px;
+    }
+
+    .hero .hero-overlay {
+        height: auto;
+    }
+
+    .team-header {
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-toggler {
+        border: none;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .navbar-toggler {
+        border: none;
+    }
+
+   
+
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
